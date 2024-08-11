@@ -207,7 +207,9 @@ Status Code | Error Code | Message
 > - Body:
 
 ```json
-
+  {
+    "id": "ewD9scdY"
+  }
 ```
 
 
@@ -1453,13 +1455,3 @@ This endpoint allows admins to reject a user's membership. If the endpoint call 
 Query | Description
 --------- | -----------
 userId | String representation of userId
-
-### Errors
-
-Status Code | Error Code | Message
---------- | ------- | -----------
-204 | No Content | null
-401 | Unauthorized | ERROR: Unauthorized request
-403 | Forbidden | ERROR: No valid permissions
-404 | Not Found | No User found for id: `${userId}`
-500 | Internal Server Error | Internal server error
